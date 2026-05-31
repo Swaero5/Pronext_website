@@ -208,7 +208,7 @@
             width: 260px;
             height: auto;
             display: block;
-            border-radius: 32px;
+            border-radius: 22px;
             /* Ombre douce pour le détacher du fond */
             box-shadow: 0 24px 72px rgba(0,0,0,0.16), 0 4px 16px rgba(0,0,0,0.08);
         }
@@ -220,14 +220,14 @@
             left: 0;
             right: 0;
             height: 40px;
-            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
-            border-radius: 0 0 32px 32px;
+            background: linear-gradient(to bottom, transparent, var(--bg));
+            border-radius: 0 0 22px 22px;
             pointer-events: none;
         }
 
         @media (prefers-color-scheme: dark) {
             .hero-screenshot-col::after {
-                background: linear-gradient(to bottom, transparent, rgba(22, 20, 18, 0.4)); /* Utilise la couleur du fond sombre */
+                background: linear-gradient(to bottom, transparent, var(--bg-dark)); /* Utilise la couleur du fond sombre */
             }
         }
         
