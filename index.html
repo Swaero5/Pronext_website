@@ -15,7 +15,6 @@
         :root {
             --bg:          #F6F6F6;
             --bg2:         #F6F6F6;
-            --bg-logo:     #F6F6F6;
             --surface:     #ffffff;
             --text-1:      #1c1917;
             --text-2:      #78716c;
@@ -84,10 +83,10 @@
             backdrop-filter:blur(44px); -webkit-backdrop-filter:blur(20px);
             border-bottom:1px solid var(--border);
             transition:box-shadow 0.9s;
-            border-radius:0 0 22px 22px;
+            border-radius:0 0 18px 18px;
         }
         @media(prefers-color-scheme:dark){nav{background:rgba(22,20,18,0.88);}}
-        nav.scrolled{box-shadow:0 2px 16px rgba(0,0,0,0.07);}
+        nav.scrolled{box-shadow:0 2px 16px rgba(0,0,0,0.04);}
 
         .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
         .nav-logo{
@@ -116,10 +115,9 @@
             font-family:'Nunito',sans-serif;
             color:white;background:var(--teal);border-radius:40px;
             text-decoration:none;display:flex;align-items:center;gap:6px;
-            box-shadow:0 2px 10px rgba(29,158,117,0.28);
-            transition:transform 0.18s,box-shadow 0.18s;
+            transition:background 0.2s,color 0.2s;
         }
-        .nav-cta:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(29,158,117,0.38);}
+        .nav-cta:hover{background:var(--teal-fill); color:var(--teal-dark);}
         .nav-cta .ms{font-size:18px;}
 
         @media(max-width:680px){
@@ -254,11 +252,10 @@
             padding:15px 30px;background:var(--teal);color:white;
             font-family:'Nunito',sans-serif;font-weight:800;font-size:16px;
             border-radius:40px;text-decoration:none;
-            box-shadow:0 4px 20px rgba(29,158,117,0.35);
-            transition:transform 0.18s,box-shadow 0.18s;
+            transition:background 0.2s,color 0.2s;
             position:relative;overflow:hidden;
         }
-        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(29,158,117,0.45);}
+        .btn-primary:hover{background:var(--teal-fill); color:var(--teal-dark);}
         .btn-primary .ms{font-size:22px;}
 
         /* Ripple */
@@ -466,11 +463,10 @@
             font-family:'Nunito',sans-serif;font-weight:800;font-size:15px;
             border-radius:var(--r-md);text-decoration:none;
             margin-top:16px;width:fit-content;
-            box-shadow:0 4px 16px rgba(29,158,117,0.28);
-            transition:transform 0.18s,box-shadow 0.18s;
+            transition:background 0.2s,color 0.2s;
             position:relative;overflow:hidden;
         }
-        .download-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(29,158,117,0.4);}
+        .download-btn:hover{background:var(--teal-fill); color:var(--teal-dark);}
         .download-btn .ms{font-size:22px;}
 
         .privacy-card{
@@ -575,8 +571,7 @@
             </h1>
             <p class="hero-sub">
                 Pronext améliore ton emploi du temps Pronote avec une interface moderne,
-                des statistiques avancées et des fonctions sociales inédites — sans jamais
-                toucher à tes données.
+                des statistiques avancées et des fonctions sociales inédites.
             </p>
             <div class="hero-actions">
                 <a class="btn-primary" href="https://github.com/swaero5/pronext/releases">
@@ -584,10 +579,10 @@
                 </a>
             </div>
             <div class="hero-pills">
-                <div class="pill pill-teal"><span class="ms">lock</span> 100% local</div>
-                <div class="pill pill-amber"><span class="ms">bolt</span> Rapide</div>
-                <div class="pill pill-purple"><span class="ms">palette</span> Material You</div>
-            </div>
+            <div class="pill pill-teal"><span class="ms">lock</span> Respect de ta vie privée</div>
+            <div class="pill pill-amber"><span class="ms">bolt</span> Ultra rapide</div>
+            <div class="pill pill-purple"><span class="ms">palette</span> Design moderne</div>
+        </div>
         </div>
  
         <div class="hero-screenshot-col">
@@ -620,17 +615,16 @@
         <div class="feat-card amber reveal reveal-d2">
             <div class="feat-icon"><span class="ms">bar_chart</span></div>
             <div class="feat-title">Statistiques scolaires</div>
-            <div class="feat-desc">Répartition par matière, journées chargées, heures annulées — tout analysé localement.</div>
-        </div>
+<div class="feat-desc">Répartition par matière, progression de l'année et comparaison des EDT avec tes amis — tout analysé localement.</div>        </div>
         <div class="feat-card coral reveal reveal-d3">
             <div class="feat-icon"><span class="ms">group</span></div>
             <div class="feat-title">Fonctions sociales</div>
-            <div class="feat-desc">EDT de tes amis, pauses communes, partage rapide par QR code ou NFC.</div>
+            <div class="feat-desc">EDT de tes amis, pauses communes,  partage rapide par QR code ou NFC.</div>
         </div>
         <div class="feat-card purple reveal reveal-d4">
             <div class="feat-icon"><span class="ms">palette</span></div>
-            <div class="feat-title">Material You</div>
-            <div class="feat-desc">Interface moderne avec couleurs dynamiques selon ton thème système. Compatible OLED.</div>
+            <div class="feat-title">Design moderne</div>
+            <div class="feat-desc">Interface moderne avec couleurs dynamiques selon ton thème système.</div>
         </div>
         <div class="feat-card blue reveal reveal-d5">
             <div class="feat-icon"><span class="ms">restaurant</span></div>
@@ -640,7 +634,7 @@
         <div class="feat-card green reveal reveal-d6">
             <div class="feat-icon"><span class="ms">shield</span></div>
             <div class="feat-title">Vie privée totale</div>
-            <div class="feat-desc">Aucun compte, aucun serveur. Tes données restent sur ton téléphone, point.</div>
+            <div class="feat-desc">Aucun compte, aucun serveur. Tes données restent sur ton téléphone.</div>
         </div>
     </div>
 </section>
@@ -793,7 +787,7 @@
             <a class="footer-link" href="https://github.com/swaero5/pronext">GitHub</a>
             <a class="footer-link" href="https://github.com/swaero5/pronext/releases">Releases</a>
             <a class="footer-link" href="https://github.com/swaero5/pronext/issues">Signaler un bug</a>
-            <a class="footer-link" href="pronext-analytics.html">Analytics</a>
+            <a class="footer-link" href="https://swaero5.github.io/pronext-stats/">Analytics</a>
         </div>
         <p class="footer-note">Pronext n'est pas affilié à Pronote · Application en développement, peut être instable</p>
     </div>
