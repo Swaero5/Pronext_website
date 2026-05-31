@@ -504,7 +504,7 @@
         }
         .footer-logo img{width:100%;height:100%;object-fit:contain;}
         .footer-logo .ms{color:white;font-size:18px;}
-        .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:16px;color:var(--text-1);}
+        .footer-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:22px;color:var(--text-1);}
         .footer-links{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
         .footer-link{font-size:13px;font-weight:600;color:var(--text-3);text-decoration:none;transition:color 0.15s;}
         .footer-link:hover{color:var(--teal);}
@@ -559,7 +559,7 @@
         <a class="nav-link" href="#compare">Comparaison</a>
         <a class="nav-link" href="#install">Installation</a>
     </div>
-    <a class="nav-cta" href="https://github.com/swaero5/pronext/releases">
+    <a class="nav-cta" href="https://github.com/Swaero5/pronext/releases/download/1.3/pronext_1.3.apk">
         <span class="ms">android</span> Télécharger
     </a>
 </nav>
@@ -580,7 +580,7 @@
                 des statistiques avancées et des fonctions sociales inédites.
             </p>
             <div class="hero-actions">
-                <a class="btn-primary" href="https://github.com/swaero5/pronext/releases">
+                <a class="btn-primary" href="https://github.com/Swaero5/pronext/releases/download/1.3/pronext_1.3.apk">
                     <span class="ms">android</span> Télécharger l'APK
                 </a>
             </div>
@@ -666,12 +666,12 @@
                 <tr>
                     <th></th>
                     <th>Pronote</th>
-                    <th class="col-pronext">Pronext ✨</th>
+                    <th class="col-pronext">Pronext</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Performance</td><td>🐢 Lente</td><td class="label-teal">⚡ Rapide</td></tr>
-                <tr><td>Interface</td><td>Vieillissante</td><td class="label-teal">Material You</td></tr>
+                <tr><td>Performance</td><td>Lent</td><td class="label-teal">Rapide</td></tr>
+                <tr><td>Interface</td><td>Vieillissante</td><td class="label-teal">Moderne</td></tr>
                 <tr><td>Statistiques scolaires</td>
                     <td><span class="cross"><span class="ms">close</span></span></td>
                     <td><span class="check"><span class="ms">check</span></span></td></tr>
@@ -681,15 +681,13 @@
                 <tr><td>Widget intelligent</td>
                     <td><span class="cross"><span class="ms">close</span></span></td>
                     <td><span class="check"><span class="ms">check</span></span></td></tr>
-                <tr><td>Vie privée 100% locale</td>
-                    <td><span class="cross"><span class="ms">close</span></span></td>
-                    <td><span class="check"><span class="ms">check</span></span></td></tr>
                 <tr><td>Fonctionne hors-ligne</td>
                     <td><span class="cross"><span class="ms">close</span></span></td>
                     <td><span class="check"><span class="ms">check</span></span></td></tr>
                 <tr><td>Compte obligatoire</td>
                     <td><span class="check" style="background:var(--coral-fill)"><span class="ms" style="color:var(--coral)">check</span></span></td>
-                    <td class="label-teal">Non ✌️</td></tr>
+                    <td><span class="cross" style="background:var(--teal-fill)"><span class="ms" style="color:var(--teal)">close</span></span></td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -744,7 +742,7 @@
                 <div class="step-num">4</div>
                 <div><div class="step-text">Profite 🎉</div><div class="step-sub">Ton EDT apparaît instantanément</div></div>
             </div>
-            <a class="download-btn" href="https://github.com/swaero5/pronext/releases">
+            <a class="download-btn" href="https://github.com/Swaero5/pronext/releases/download/1.3/pronext_1.3.apk">
                 <span class="ms">download</span> Télécharger l'APK
             </a>
         </div>
@@ -776,10 +774,10 @@
                     La seule information anonyme enregistrée : si l'app a été ouverte dans la journée.
                 </p>
                 <div class="privacy-grid">
-                    <div class="privacy-item"><span class="ms">block</span> Aucun compte</div>
+                    <div class="privacy-item"><span class="ms">person_cancel</span> Aucun compte</div>
                     <div class="privacy-item"><span class="ms">cloud_off</span> Aucun serveur</div>
-                    <div class="privacy-item"><span class="ms">phone_android</span> Données locales</div>
-                    <div class="privacy-item"><span class="ms">visibility_off</span> Aucun identifiant</div>
+                    <div class="privacy-item"><span class="ms">lock</span> Données locales</div>
+                    <div class="privacy-item"><span class="ms">key_off</span> Aucun identifiant</div>
                 </div>
             </div>
         </div>
@@ -790,11 +788,13 @@
 <footer>
     <div class="footer-inner">
         <a class="footer-brand" href="#">
-            <div class="footer-logo">
-                <img src="Logo.png" alt="Pronext"
-                     onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-                <span class="ms" style="display:none">school</span>
-            </div>
+            <div class="nav-logo">
+            <picture>
+                <source srcset="logo.png" media="(prefers-color-scheme: dark)">
+                <img src="logo-dark.png" alt="Pronext" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            </picture>
+            <span class="ms" style="display:none">school</span>
+        </div>
             <span class="footer-name">Pronext</span>
         </a>
         <div class="footer-links">
@@ -803,7 +803,7 @@
             <a class="footer-link" href="https://github.com/swaero5/pronext/issues">Signaler un bug</a>
             <a class="footer-link" href="https://swaero5.github.io/pronext-stats/">Analytics</a>
         </div>
-        <p class="footer-note">Pronext n'est pas affilié à Pronote · Application en développement, peut être instable</p>
+        <p class="footer-note">Pronext est une application indépendante, sans affiliation à Pronote · Application en développement, peut être instable</p>
     </div>
 </footer>
 
